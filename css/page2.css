@@ -28,5 +28,21 @@ body {
     font-family: 'Dreaming Out Loud';
     font-size: 3vw;
     text-align: center;
-    color: ##353434;
+    color: #353434;
+  }
+
+  #darby {
+    max-height:50%;
+    max-width:30%;
+    bottom:-75px;
+    right:0;
+    position:absolute;
+  }
+
+  #sevenweeks {
+    max-height:80%;
+    max-width:30%;
+    bottom:200px;
+    left:250px;
+    position:absolute;
   }
