@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position-x: right;
   background-image: url('../images/starbackground.jpg');
+  font-family: 'Dreaming Out Loud';
 }
 
 #content {
@@ -26,9 +27,25 @@ body {
 }
 
 .wording {
-  font-family: 'Dreaming Out Loud';
   text-align: center;
   color: #353434;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1vw;
+  border-radius: 20px;
+}
+
+.image {
+  border-radius: 15px;
+}
+
+.image-caption {
+  text-align: center;
 }
 
 #darby {
@@ -55,8 +72,12 @@ body {
   }
 
   .image {
-    max-width: 80vw;
+    max-width: 40vw;
     max-height: 25vh;
+  }
+
+  .image-caption {
+    font-size: 3vw;
   }
 
   #darby {
