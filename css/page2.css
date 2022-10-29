@@ -161,7 +161,7 @@ body {
     padding: 5px;
     width: 90px;
     text-align: center;
-    transform: translate(-20px, 260px);
+    transform: translateX(-20px);
   }
 
   #darby {
