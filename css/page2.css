@@ -1,55 +1,62 @@
 body {
-    margin: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-  
-  #bg {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-  }
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
-  #content {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 20pt;
-  }
+#bg {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
 
-  @font-face {
-    font-family: 'Dreaming Out Loud';
-    src: url('../fonts/titlefont.ttf') format('truetype');
-  }
+#content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 20pt;
+}
 
-  .wording {
-    font-family: 'Dreaming Out Loud';
-    font-size: 3vw;
-    text-align: center;
-    color: #353434;
-  }
+@font-face {
+  font-family: "Dreaming Out Loud";
+  src: url("../fonts/titlefont.ttf") format("truetype");
+}
 
-  #darby {
-    max-height:50%;
-    max-width:30%;
-    bottom:-75px;
-    right:0;
-    position:absolute;
-  }
+.wording {
+  font-family: "Dreaming Out Loud";
+  font-size: 3vw;
+  text-align: center;
+  color: #353434;
+}
 
-  .image {
-    max-height:80%;
-    max-width:30%;
-    top:25%;
-    position:absolute;
-  }
+#darby {
+  max-height: 50%;
+  max-width: 30%;
+  bottom: -75px;
+  right: 0;
+  position: absolute;
+}
 
-  #sevenweeks {
-    left:250px;
-  }
+.image {
+  max-height: 80%;
+  max-width: 30%;
+  top: 25%;
+  position: absolute;
+}
 
-  #tenweeks {
-    right:250px;
-  }
+#sevenweeks {
+  left: 250px;
+}
+
+#tenweeks {
+  right: 250px;
+}
+
+#due-date {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
