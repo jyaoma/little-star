@@ -2,47 +2,48 @@ body {
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
-}
-
-#bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   height: 100vh;
-  width: 100vw;
-  object-fit: cover;
-}
-
-@font-face {
-  font-family: 'Dreaming Out Loud';
-  src: url('../fonts/titlefont.ttf') format('truetype');
-}
-
-#content {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  background-image: url('../images/starbackground.jpg');
+  background-size: cover;
+  background-position-x: right;
 }
 
 #question {
   font-family: 'Dreaming Out Loud';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 7vw;
   color: #353434;
 }
 
 #button {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-decoration: none;
-  color: #9F9998;
-  border: 2pt solid #9F9998;
-  padding: 5pt;
-  border-radius: 1.6vw;
+  color: #9f9998;
+  border: 2pt solid #9f9998;
+}
+
+@media (max-width: 480px) {
+  #question {
+    font-size: 10vw;
+  }
+
+  #button {
+    padding: 5pt;
+    border-radius: 999px;
+  }
+}
+
+@media (min-width: 480px) {
+  #question {
+    font-size: 7vw;
+  }
+
+  #button {
+    font-size: 2vw;
+    padding: 5pt;
+    border-radius: 999px;
+  }
 }
