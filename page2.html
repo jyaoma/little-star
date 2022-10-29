@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/page2.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <script src="./scripts/page2.js"></script>
   </head>
   <body>
     <div id="content">
@@ -41,6 +42,14 @@
       </div>
     </div>
 
-    <img id="darby" src="./images/messages_0.png" />
+    <div id="darby-box">
+      <div id="darby-text" class="text-box">Soon to be a big brother!</div>
+      <img
+        id="darby"
+        src="./images/messages_0.png"
+        onmouseover="showHideDarbyText()"
+        onmouseout="showHideDarbyText()"
+      />
+    </div>
   </body>
 </html>
