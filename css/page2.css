@@ -39,10 +39,17 @@ body {
     position:absolute;
   }
 
-  #sevenweeks {
+  .image {
     max-height:80%;
     max-width:30%;
-    bottom:200px;
-    left:250px;
+    top:25%;
     position:absolute;
+  }
+
+  #sevenweeks {
+    left:250px;
+  }
+
+  #tenweeks {
+    right:250px;
   }
