@@ -2,61 +2,110 @@ body {
   margin: 0;
   overflow-y: hidden;
   overflow-x: hidden;
-}
-
-#bg {
   height: 100vh;
-  width: 100vw;
-  object-fit: cover;
+  background-size: cover;
+  background-position-x: right;
+  background-image: url('../images/starbackground.jpg');
 }
 
 #content {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 20pt;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  gap: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
-@font-face {
-  font-family: "Dreaming Out Loud";
-  src: url("../fonts/titlefont.ttf") format("truetype");
+.text-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1vw 2vw;
+  border-radius: 20px;
 }
 
 .wording {
-  font-family: "Dreaming Out Loud";
-  font-size: 3vw;
+  font-family: 'Dreaming Out Loud';
   text-align: center;
   color: #353434;
 }
 
 #darby {
-  max-height: 50%;
-  max-width: 30%;
-  bottom: -75px;
   right: 0;
-  position: absolute;
+  position: fixed;
 }
 
-.image {
-  max-height: 80%;
-  max-width: 30%;
-  top: 25%;
-  position: absolute;
+#ultrasounds {
+  display: flex;
 }
 
-#sevenweeks {
-  left: 250px;
+@media (max-width: 480px) {
+  #content {
+    height: 70vh;
+  }
+
+  #ultrasounds {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wording {
+    font-size: 5vw;
+  }
+
+  .image {
+    max-width: 80vw;
+    max-height: 25vh;
+  }
+
+  #darby {
+    max-height: 200px;
+    bottom: -50px;
+  }
 }
 
-#tenweeks {
-  right: 250px;
+@media (min-width: 481px) and (max-width: 1024px) {
+  #content {
+    height: 65vh;
+  }
+
+  #ultrasounds {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .wording {
+    font-size: 5vw;
+  }
+
+  .image {
+    max-width: 80vw;
+    max-height: 20vh;
+  }
+
+  #darby {
+    max-height: 250px;
+    bottom: -50px;
+  }
 }
 
-#due-date {
-  position: absolute;
-  left: 50%;
-  bottom: 5%;
-  transform: translateX(-50%);
+@media (min-width: 1025px) {
+  #ultrasounds {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .wording {
+    font-size: 3vw;
+  }
+
+  .image {
+    max-height: 30vh;
+  }
+
+  #darby {
+    max-height: 350px;
+    bottom: -75px;
+  }
 }
