@@ -4,7 +4,11 @@ body {
   height: 100vh;
   background-size: cover;
   background-position-x: right;
-  background-image: url('../images/starbackground.jpg');
+  background-image: url('../images/star_background.jpg'),
+    url('../images/star_background_2.jpg'),
+    url('../images/star_background_3.jpg'),
+    url('../images/star_background_4.jpg');
+  background-color: #f1f0ee;
   font-family: 'Dreaming Out Loud';
 }
 
