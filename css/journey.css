@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  overflow-y: hidden;
   overflow-x: hidden;
   height: 100vh;
   background-size: cover;
@@ -13,18 +12,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 90vh;
+  justify-content: start;
   gap: 20px;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-
-/* .text-box {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 1vw 2vw;
-  border-radius: 20px;
-} */
 
 .wording {
   text-align: center;
@@ -37,6 +29,8 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 1vw;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 20px;
 }
 
@@ -68,6 +62,11 @@ body {
 
 #ultrasounds {
   display: flex;
+  flex-direction: column;
+}
+
+.multi-image-container {
+  text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -76,7 +75,6 @@ body {
   }
 
   #ultrasounds {
-    flex-direction: column;
     gap: 20px;
   }
 
@@ -103,6 +101,14 @@ body {
   #darby {
     max-height: 200px;
   }
+
+  .multi-image-container {
+    padding: 2pt;
+  }
+
+  .multi-image-container a {
+    padding: 3pt;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -111,7 +117,6 @@ body {
   }
 
   #ultrasounds {
-    flex-direction: column;
     gap: 30px;
   }
 
@@ -124,6 +129,10 @@ body {
     max-height: 20vh;
   }
 
+  .image-caption {
+    font-size: 18pt;
+  }
+
   #darby-box {
     flex-direction: row;
     bottom: -50px;
@@ -134,11 +143,18 @@ body {
   #darby {
     max-height: 250px;
   }
+
+  .multi-image-container {
+    padding: 10pt;
+  }
+
+  .multi-image-container a {
+    padding: 10pt;
+  }
 }
 
 @media (min-width: 1025px) {
   #ultrasounds {
-    flex-direction: row;
     gap: 50px;
   }
 
@@ -148,6 +164,10 @@ body {
 
   .image {
     max-height: 30vh;
+  }
+
+  .image-caption {
+    font-size: 18pt;
   }
 
   #darby-box {
@@ -167,5 +187,13 @@ body {
   #darby {
     object-fit: contain;
     max-height: 350px;
+  }
+
+  .multi-image-container {
+    padding: 5pt;
+  }
+
+  .multi-image-container a {
+    padding: 5pt;
   }
 }

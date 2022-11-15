@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100vh;
+  background-size: cover;
+  background-position-x: right;
+  background-image: url('../images/starbackground.jpg');
+  font-family: 'Dreaming Out Loud';
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  gap: 20px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.wording {
+  text-align: center;
+  color: #353434;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1vw;
+  border-radius: 20px;
+}
+
+.image {
+  border-radius: 15px;
+}
+
+.image-caption {
+  text-align: center;
+}
+
+#darby-box {
+  display: flex;
+  right: 0;
+  position: fixed;
+}
+
+#darby-text {
+  -webkit-transition: 0.4s ease-in-out opacity;
+  -moz-transition: 0.4s ease-in-out opacity;
+  -o-transition: 0.4s ease-in-out opacity;
+  transition: 0.4s ease-in-out opacity;
+  opacity: 0;
+}
+
+.darby--hover {
+  opacity: 1 !important;
+}
+
+#ultrasounds {
+  display: flex;
+}
+
+#button {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #9f9998;
+  border: 2pt solid #9f9998;
+}
+
+@media (max-width: 480px) {
+  #content {
+    height: 65vh;
+  }
+
+  #ultrasounds {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wording {
+    font-size: 5vw;
+  }
+
+  .image {
+    max-width: 40vw;
+    max-height: 25vh;
+  }
+
+  .image-caption {
+    font-size: 10pt;
+  }
+
+  #darby-box {
+    flex-direction: row;
+    bottom: -50px;
+    align-items: center;
+    font-size: 3vw;
+  }
+
+  #darby {
+    max-height: 200px;
+  }
+
+  #button {
+    font-size: 8pt;
+    padding: 5pt 8pt;
+    border-radius: 999px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  #content {
+    height: 65vh;
+  }
+
+  #ultrasounds {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .wording {
+    font-size: 5vw;
+  }
+
+  .image {
+    max-width: 80vw;
+    max-height: 20vh;
+  }
+
+  .image-caption {
+    font-size: 3vw;
+  }
+
+  #darby-box {
+    flex-direction: row;
+    bottom: -50px;
+    align-items: center;
+    font-size: 3vw;
+  }
+
+  #darby {
+    max-height: 250px;
+  }
+
+  #button {
+    font-size: 18pt;
+    padding: 5pt 10pt;
+    border-radius: 999px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #ultrasounds {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .wording {
+    font-size: 3vw;
+  }
+
+  .image {
+    max-height: 30vh;
+  }
+
+  .image-caption {
+    font-size: 20pt;
+  }
+
+  #darby-box {
+    flex-direction: column;
+    bottom: -75px;
+    font-size: 20px;
+    align-items: center;
+  }
+
+  #darby-text {
+    padding: 5px;
+    width: 90px;
+    text-align: center;
+    transform: translateX(-20px);
+  }
+
+  #darby {
+    object-fit: contain;
+    max-height: 350px;
+  }
+
+  #button {
+    font-size: 16pt;
+    padding: 5pt 10pt;
+    border-radius: 999px;
+  }
+}
