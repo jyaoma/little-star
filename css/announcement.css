@@ -10,7 +10,7 @@ body {
     url('../images/star_background_3.jpg'),
     url('../images/star_background_4.jpg');
   background-color: #f1f0ee;
-  font-family: 'Dreaming Out Loud';
+  font-family: 'Dreaming Out Loud', sans-serif;
 }
 
 #content {
